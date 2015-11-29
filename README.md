@@ -9,5 +9,9 @@ Movie success predictor written by [@dhanus](http://github.com/dhanus), [@danato
 Install required python packages:
 <pre><code>pip install -r requirements.txt</code></pre>
 
+
+Open run_scraper.sh and change start_year and end_year to your desired values. No movies released in your end_year will be included in your results. Run the file as follows. 
+<pre><code>./run_scraper.sh </code></pre>
+
 Run ipython notebook:
 <pre><code>ipython notebook process_notebook.ipynb</code></pre>
