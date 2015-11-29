@@ -113,10 +113,10 @@ def main(start_year, end_year):
     c = 0 
     for b in batches:
         movies, errs = get_movies(ia, titles[b[0]:b[1]])
-        filename = '2014/movies_%s.p' % c
+        filename = '%s/movies_%s.p' % (start_year, c)
         m = io.open(filename,'wb')
         pickle.dump(movies, m)#movies = pickle.load(io.open(filename,'rb'))
-        err_filename = '2014/err_%s.p' % c
+        err_filename = '%s/err_%s.p' % (start_year, c)
         pickle.dump(errs, io.open(err_filename, 'wb'))
         c+=1
         print "Saved %d movies to %s " %(len(movies), filename)
