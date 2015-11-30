@@ -4,6 +4,16 @@ import cPickle as pickle
 import io
 import sys 
 
+
+def load_pickled_movies(year, nfiles): 
+    movies = [] 
+    for i in range(nfiles+1): 
+        filename = "%s/movies_%s.p" % (year, i)
+        m = pickle.load(io.open(filename,'rb'))
+        movies += m 
+    return movies 
+
+
 def get_titles(start_year=False, end_year=False):
     f = open('movies.list')
     titles = []
