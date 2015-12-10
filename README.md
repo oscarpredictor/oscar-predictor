@@ -1,4 +1,4 @@
-# Movie-success-predictor
+# Movie-success-predictor 
 
 This is an ipython notebook that walks through our process of using [IMBD](http://www.imdb.com/) data to predict the success of any given movie.
 
