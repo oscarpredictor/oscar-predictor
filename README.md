@@ -1,4 +1,4 @@
-# movie-success-predictor
+# Movie-success-predictor
 
 This is an ipython notebook that walks through our process of using [IMBD](http://www.imdb.com/) data to predict the success of any given movie.
 
@@ -9,9 +9,13 @@ Movie success predictor written by [@dhanus](http://github.com/dhanus), [@danato
 Install required python packages:
 <pre><code>pip install -r requirements.txt</code></pre>
 
-
-Open run_scraper.sh and change start_year and end_year to your desired values. No movies released in your end_year will be included in your results. Run the file as follows. 
-<pre><code>./run_scraper.sh </code></pre>
-
 Run ipython notebook:
 <pre><code>ipython notebook process_notebook.ipynb</code></pre>
+
+## Road Map
+We did two analyses for this project: Oscar Predictor and Box Office Sales.  The 
+
+####Oscar Predictor
+The data scraper for this analysis can be found in ipython notebook oscar_scraper.ipynb.  This takes in the xls file "Academy_Awards_2006.xls" and outputs "AAdictfinal".
+<pre><code>ipython notebook oscar_scraper.ipynb</code></pre>
+
